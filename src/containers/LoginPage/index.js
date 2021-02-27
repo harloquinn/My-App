@@ -21,34 +21,36 @@ class LoginPage extends React.Component {
 
     render() {
         return (
-            <form className="Login-form">
-                <FormGroup
-                    controlId="userName"
-                >
-                <FormLabel>Username</FormLabel>
-                <FormControl
-                    autoFocus
-                    name="username"
-                    type="username"
-                    value={this.state.username}
-                    placeholder="Please enter your Email"
-                    onChange = {this.handleInputChange}
-                />
-                </FormGroup>
-                <FormGroup
-                    controlId="password"
-                >
-                <FormLabel>Password</FormLabel>
-                <FormControl
-                    autoFocus
-                    name="password"
-                    type="password"
-                    value={this.state.password}
-                    placeholder="Please enter your Password"
-                    onChange = {this.handleInputChange}
-                />
-                </FormGroup>
-            </form>
+            <div className="Login-box">
+                <form className="Login-form">
+                    <FormGroup
+                        controlId="userName"
+                    >
+                    <FormLabel>Username</FormLabel>
+                    <FormControl
+                        autoFocus
+                        name="username"
+                        type="username"
+                        value={this.state.username}
+                        placeholder="Please enter your Email"
+                        onChange = {this.handleInputChange}
+                    />
+                    </FormGroup>
+                    <FormGroup
+                        controlId="password"
+                    >
+                    <FormLabel>Password</FormLabel>
+                    <FormControl
+                        autoFocus
+                        name="password"
+                        type="password"
+                        value={this.state.password}
+                        placeholder="Please enter your Password"
+                        onChange = {this.handleInputChange}
+                    />
+                    </FormGroup>
+                </form>
+            </div>
         )
     }
 }
