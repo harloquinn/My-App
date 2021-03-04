@@ -57,6 +57,10 @@ const LoginPageStyles = styled.div`
             box-shadow: 0 0 0 1pt rgb(58, 138, 199);
         }
     }
+    .register{
+        padding: 20px;
+        color: rgb(58, 138, 199);
+    }
 `;
 
 export default LoginPageStyles;
